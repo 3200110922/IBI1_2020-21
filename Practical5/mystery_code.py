@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: 
+# Answer: Random generation of a number greater than 1 and less than 50
 
 # Import libraries
 # randint allows drawing a random number, 
@@ -11,11 +11,11 @@ from random import randint
 from math import ceil
 
 
-p=False
+p=False              #Initial value of p is False
 while p==False:
 	p = True
 	n = randint(1,100)
 	if n > 50:
 		p = False
-
+#if n > 50, the cycle repeats, if not,then stop
 print(n)
