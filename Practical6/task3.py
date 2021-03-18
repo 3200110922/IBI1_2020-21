@@ -20,5 +20,5 @@ plt.boxplot(c,
     showfliers=True,
     notch=False
     )
-plt.show()
 print(c)
+plt.show()
