@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 a = np.array(gene_lengths)
 b = np.array(exon_counts)
 c = a/b
-
+#make lists a and b into ndarry so it's easy to process data
 c.sort()
-
+# sort new ndarry c.
 plt.boxplot(c,
     vert=True,
     whis=1.5,
@@ -20,5 +20,6 @@ plt.boxplot(c,
     showfliers=True,
     notch=False
     )
+#set up a new boxplot
 print(c)
 plt.show()
