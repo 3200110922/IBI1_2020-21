@@ -3,20 +3,22 @@ import os
 dict()
 os.chdir("/Users/23511/IBI1_2020-21/Practical8")
 f = open(r'/Users/23511/IBI1_2020-21/Practical8/royal.fa')
-
+# open the file called royal.fa
 b = ''
 S = ''
 c = ''
-
+#create three new strings to store data
 
 for line in f:
     if line.startswith('>'):
         b = re.findall(r'^>.+?_',line)
         b = b[0]
         b = b[:-1]
+        #read the title
     else:
         c=re.findall(r'.+',line)
         c=c[0]
+        #read the gene sequence
     
     protein = {
     'TTT':'F','TTC':'F','TTA':'L','TTG':'L','CTT':'L',
@@ -34,10 +36,12 @@ for line in f:
     'GGT':'G','GGC':'G','GGA':'G','GGG':'G'
     }
 for i in range(0,len(c),3):
-   S = S + protein[c[i:i+3]]
+    S = S + protein[c[i:i+3]]
+    #get the protein sequence
     
 a = '>'+b+' '+str(len(S))+'\n'+S
 print(a)
+#output the title, the protein sequence and its length.
 z = open('rng.fa','w')
 #open new files and write s into it.
 z.write(a)
