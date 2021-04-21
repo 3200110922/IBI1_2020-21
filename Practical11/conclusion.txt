@@ -1,0 +1,6 @@
+The alignment score between human and mouse is 1091 and the percentage of identical amino acids is 89.68609865470853 %
+The alignment score between human and random is -250 and the percentage of identical amino acids is 5.829596412556054 %
+The alignment score between mouse and random is -250 and the percentage of identical amino acids is 6.278026905829597 %
+
+From these experiment we can find that there is 89.686% similarity between human's protein and mouse's protein.
+The alignment score between human and random is equal to the score between mouse and random, this is an interesting part.
