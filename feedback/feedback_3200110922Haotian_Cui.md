@@ -1,0 +1,1 @@
+To better improve my assignments, I added a new reflection.txt in practical4 and enrich this week's practice. In prcatical5, everything seemed to be great. In practical6, i created a new list to help users input the data they want in task2, so we could get a new pie which showed the data users want to say.
